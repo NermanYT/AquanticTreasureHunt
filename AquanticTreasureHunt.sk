@@ -1,11 +1,11 @@
 options:
-    version: 0.1 # Ne változtasd meg!
+    version: 0.2 # Ne változtasd meg!
     permission: aquanticskripts.treasurehunt
     aquantic: &3Aquantic &8» &7
     glass_background: black stained glass pane
 
 on load:
-    text from "https://pastebin.com/raw/3EFj2Vma" is not "{@version}"
+    text from "https://raw.githubusercontent.com/NermanYT/AquanticTreasureHunt/main/AquanticTreasureHunt.sk" is not "{@version}"
     send "Version outdated! Download the newest version on <some link here>" to console
 
 command /th:
