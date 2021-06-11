@@ -1,0 +1,40 @@
+options:
+    version: 0.1 # Ne változtasd meg!
+    permission: aquanticskripts.treasurehunt
+    aquantic: &3Aquantic &8» &7
+    glass_background: black stained glass pane
+
+on load:
+    text from "https://pastebin.com/raw/3EFj2Vma" is not "{@version}"
+    send "Version outdated! Download the newest version on <some link here>" to console
+
+command /th:
+    aliases: /aquanticskripts.treasurehunt, /treasurehunt, /kincsvadászat, /kincsvadaszat
+    permission: aquanticskripts.treasurehunt
+    permission message: {@aquantic}&cNincs ehhez jogod!
+    trigger:
+        if player has permission "{@permission}":
+            open virtual chest with size 5 named "&3Aquantic &8» &8Kincsvadászat" to player
+            wait 2 ticks
+        # Funkciók
+            format gui slot 9 of player with paper named "&7"
+        # Háttér üveg (Kezdés)
+            format gui slot 0 of player with {@glass_background} named "&7" to do nothing
+            format gui slot 1 of player with {@glass_background} named "&7" to do nothing
+            format gui slot 2 of player with {@glass_background} named "&7" to do nothing
+            format gui slot 3 of player with {@glass_background} named "&7" to do nothing
+            format gui slot 4 of player with {@glass_background} named "&7" to do nothing
+            format gui slot 5 of player with {@glass_background} named "&7" to do nothing
+            format gui slot 6 of player with {@glass_background} named "&7" to do nothing
+            format gui slot 7 of player with {@glass_background} named "&7" to do nothing
+            format gui slot 8 of player with {@glass_background} named "&7" to do nothing
+            format gui slot 36 of player with {@glass_background} named "&7" to do nothing
+            format gui slot 37 of player with {@glass_background} named "&7" to do nothing
+            format gui slot 38 of player with {@glass_background} named "&7" to do nothing
+            format gui slot 39 of player with {@glass_background} named "&7" to do nothing
+            format gui slot 40 of player with {@glass_background} named "&7" to do nothing
+            format gui slot 41 of player with {@glass_background} named "&7" to do nothing
+            format gui slot 42 of player with {@glass_background} named "&7" to do nothing
+            format gui slot 43 of player with {@glass_background} named "&7" to do nothing
+            format gui slot 44 of player with {@glass_background} named "&7" to do nothing
+            # Háttér üveg (Bezárás)
